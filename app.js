@@ -24,7 +24,7 @@ const emailsSchema = {
 const Email = mongoose.model("emails", emailsSchema);
 
 app.get("/", function (req, res) {
-  // res.set('Content-Type', 'text/html; charset=utf-8');
+  res.set("Content-Type", "text/html; charset=utf-8");
   res.send("Farmgo.co is connected");
 });
 
