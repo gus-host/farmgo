@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv/config");
 
-app.use(cors({ origin: "http://farmgo-backend.farmgo.co.farmgo.co" }));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());
